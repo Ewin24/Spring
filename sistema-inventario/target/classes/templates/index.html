@@ -1,0 +1,92 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inventario</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+	crossorigin="anonymous">
+</head>
+<body>
+
+	<nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary"
+		data-bs-theme="dark">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="">Aplicacion de inventario</a>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+				aria-controls="navbarNavAltMarkup" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-link active" aria-current="page" href="/">Inicio</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container text-center">
+		<div>
+			<h1>Bienvenido a la aplicacion de inicio</h1>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-6">
+				<a th:href="@{/categorias}" href="/categorias">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Lista de categorias</h5>
+							<p class="card-text">Contenido de la tarjeta 1.</p>
+						</div>
+					</div>
+				</a>
+
+				<div class="card mt-1" th:href="@{/categorias/nuevo}">
+					<div class="card-body">
+						<h5 class="card-title">Agregar categorias</h5>
+						<p class="card-text">Contenido de la tarjeta 2.</p>
+					</div>
+				</div>
+				<div class="card mt-1" th:href="@{/productos}">
+					<div class="card-body">
+						<h5 class="card-title">Lista de productos</h5>
+						<p class="card-text">Contenido de la tarjeta 3.</p>
+					</div>
+				</div>
+				<div class="card mt-1" th:href="@{/productos/nuevo}">
+					<div class="card-body">
+						<h5 class="card-title">Agregar productos</h5>
+						<p class="card-text">Contenido de la tarjeta 4.</p>
+					</div>
+				</div>
+				<a th:href="@{/usuario}">
+					<div class="card mt-1">
+						<div class="card-body">
+							<h5 class="card-title">Lista de usuarios</h5>
+							<p class="card-text">Contenido de la tarjeta 4.</p>
+						</div>
+					</div>
+				</a>
+				
+				<a th:href="@{/usuario}">clic</a>
+			</div>
+		</div>
+	</div>
+
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+		crossorigin="anonymous">
+		
+	</script>
+</body>
+</html>
